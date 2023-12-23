@@ -1,0 +1,21 @@
+{
+    "Types": [
+      {
+        "Type": "billing",
+        "Category": [
+          "Invoice",
+          "Payment",
+          "Subscription"
+        ]
+      },
+      {
+        "Type": "fault",
+        "Category": [
+          "Hardware",
+          "Software",
+          "Network"
+        ]
+      }
+    ]
+  }
+  

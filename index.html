@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="welcome">Welcome <span id="userName">User Name</span></div>
+      <button class="logout-button">Logout</button>
+    </div>
+
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pay Bill</a></li>
+        <li><a href="#">Register Complaint</a></li>
+        <li><a href="#">Complaint Status</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <form action="#" method="post">
+        <div class="form_container">
+          <div class="form-group">
+            <label for="complaintType">Complaint Type:</label>
+            <select id="complaintType" required>
+              <option value="billing">Billing related</option>
+              <option value="fault">Faulty Product</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" class="categorySelect"></select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactPerson">Contact Person:</label>
+            <input type="text" id="contactPerson" required />
+          </div>
+
+          <div class="form-group">
+            <label for="landmark">Landmark:</label>
+            <input type="text" id="landmark" required />
+          </div>
+
+          <div class="form-group">
+            <label for="consumerNumber">Consumer Number:</label>
+            <input type="text" id="consumerNumber" required />
+          </div>
+
+          <div class="form-group">
+            <label for="problemDescription">Problem Description:</label>
+            <textarea id="problemDescription" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number:</label>
+
+            <div class="flex_left">
+              <div class="countryCode">
+                <select id="countryCode" name="countryCode"></select>
+              </div>
+
+              <div class="mobileNumber">
+                <input
+                  type="text"
+                  id="mobileNumber"
+                  name="mobileNumber"
+                  placeholder="Enter Mobile Number"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel (Reset)</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
